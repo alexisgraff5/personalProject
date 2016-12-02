@@ -4,6 +4,7 @@ body {
   letter-spacing: .25px;
 }
 
+/* index.html */
 .black-bar-nav {
   height: 40px;
   background-color: #1E1E1E;
@@ -36,11 +37,6 @@ body {
 
 .first-last {
   padding: 0px 10px;
-}
-
-.footer {
-  background: transparent url(../images/footer-bg-lg.jpg) no-repeat top center;
-  margin-top: -15px;
 }
 
 .footer-img {
@@ -89,4 +85,10 @@ body {
     min-width: 300px;
     width: 74%;
   }
+}
+
+/* individual product pages */
+.spec-container {
+  background-color: #F7F8F9;
+  display: flex;
 }

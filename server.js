@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json());
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // app.use(session({
 //   secret: config.sessionSecret,
