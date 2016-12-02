@@ -4,6 +4,40 @@ body {
   letter-spacing: .25px;
 }
 
+.black-bar-nav {
+  height: 40px;
+  background-color: #1E1E1E;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+.menu-nav-container {
+  background-color: #FFFFFF;
+  height: 100px;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.menu-middle {
+  margin: auto;
+}
+
+.middle {
+  padding: 0px 20px;
+}
+
+.first-last {
+  padding: 0px 10px;
+}
+
 .footer {
   background: transparent url(../images/footer-bg-lg.jpg) no-repeat top center;
   margin-top: -15px;
