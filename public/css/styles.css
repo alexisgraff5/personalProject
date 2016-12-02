@@ -39,9 +39,20 @@ body {
   padding: 0px 10px;
 }
 
+.email-offers {
+  background-color: #F7F8F9;
+  border-width: 1px;
+  border-top-color: #D1D4D6;
+  border-bottom-color: #D1D4D6;
+  border-style: solid;
+}
+
 .footer-img {
   background-image: url("../img/alwaysOn/FOOTER.jpg");
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-position: bottom;
 }
 
 .footer-text {
@@ -74,7 +85,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .footer-img {
+  .footer-img .banner-image{
     background-position: bottom center;
     background-size: auto 130%;
   }
@@ -85,6 +96,23 @@ body {
     min-width: 300px;
     width: 74%;
   }
+}
+
+/* home page */
+.banner-image {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.grey-back {
+  background-color: #F7F8F9;
+}
+
+.watch-sizes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 /* individual product pages */
