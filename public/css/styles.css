@@ -115,6 +115,10 @@ body {
   padding-bottom: 50px;
 }
 
+.size-gutter {
+  padding: 15px;
+}
+
 /* individual product pages */
 .spec-container {
   background-color: #F7F8F9;
