@@ -123,4 +123,16 @@ body {
 .spec-container {
   background-color: #F7F8F9;
   display: flex;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.specs-text {
+  width: 44%;
+  margin-left: 120px;
+  padding-top: 25px;
+}
+
+.large-product-image {
+  width: 54%;
 }
