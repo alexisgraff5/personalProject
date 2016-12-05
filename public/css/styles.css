@@ -33,26 +33,14 @@ body {
   height: 100px;
   margin-top: 19px;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
 }
 
-.main-menu {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-}
-
-.menu-middle {
-  margin: auto;
-}
-
-.middle {
-  padding: 0px 20px;
-}
-
-.first-last {
-  padding: 0px 10px;
+.search-box {
+  border-color: #1E1E1E;
+  border: 2px;
+  padding: 7px 20px;
+  border-style: solid;
+  max-width: 150px;
 }
 
 .email-offers {
@@ -183,6 +171,14 @@ h4 {
 
 .size-gutter {
   padding: 15px;
+}
+
+.home-buttons {
+  text-align: center;
+}
+
+.home-buttons .btn {
+  display: inline-block;
 }
 
 /* individual product pages */
