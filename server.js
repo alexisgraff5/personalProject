@@ -3,14 +3,21 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var cors = require('cors');
 var config = require('./config.js');
+var massive = require('massive');
+var connectionString = "";
 
 var app = express();
 
+// var massiveInstance = massive.connectSync({connectionString : connectionString});
+
 app.use(express.static(__dirname + '/public'));
-
 app.use(bodyParser.json());
-
 app.use(cors());
+
+// app.set('db', massiveInstance);
+
+// var db = app.get('db');
+// var controller = require('./productsCtrl');
 
 // app.use(session({
 //   secret: config.sessionSecret,
