@@ -25,6 +25,31 @@ angular.module('nixonClone', ['ui.router']).config(function($urlRouterProvider, 
     templateUrl: './views/womens/kenzi/kenziTemp.html',
     controller: 'productCtrl'
   })
+    .state('driver-leather', {
+    url: '/mens-driver-leather',
+    templateUrl: './views/mens/driver/driverLeatherTemp.html',
+    controller: 'productCtrl'
+  })
+    .state('driver-ss', {
+    url: '/mens-driver-stainless',
+    templateUrl: './views/mens/driver/driverSsTemp.html',
+    controller: 'productCtrl'
+  })
+    .state('gi-leather', {
+    url: '/womens-gi-leather',
+    templateUrl: './views/womens/gi/giLeatherTemp.html',
+    controller: 'productCtrl'
+  })
+    .state('gi-nylon', {
+    url: '/womens-gi-nylon',
+    templateUrl: './views/womens/gi/giNylonTemp.html',
+    controller: 'productCtrl'
+  })
+    .state('gi-stainless', {
+    url: '/womens-gi-stainless',
+    templateUrl: './views/womens/gi/giSsTemp.html',
+    controller: 'productCtrl'
+  })
 
   $urlRouterProvider.otherwise('/home');
 
