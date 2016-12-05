@@ -45,7 +45,18 @@ body {
   border-top-color: #D1D4D6;
   border-bottom-color: #D1D4D6;
   border-style: solid;
+  display: flex;
+  justify-content: center;
 }
+
+.emails {
+  padding: 30px;
+}
+
+.enter-email {
+  padding: 30px;
+}
+
 
 .footer-img {
   background-image: url("../img/alwaysOn/FOOTER.jpg");
@@ -82,6 +93,41 @@ body {
   max-width: 1280px;
   text-align: center;
   width: 25%;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 26px;
+  padding-bottom: 4px;
+  letter-spacing: .5px;
+}
+
+.hr-bnav {
+  background: #1E1E1E;
+  color: #1E1E1E;
+  width: 36px;
+  height: 2px;
+  margin: 10px 0;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 160px;
+}
+
+.bottom-nav-col {
+  margin: 15px 0;
+}
+
+.bottom-nav-list {
+  margin: 28px 0 0;
+}
+
+.bottom-nav-list li {
+  font-size: 11px;
+  line-height: 18px;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -128,11 +174,50 @@ body {
 }
 
 .specs-text {
-  width: 44%;
+  width: 39%;
   margin-left: 120px;
   padding-top: 25px;
 }
 
 .large-product-image {
-  width: 54%;
+  width: 59%;
+}
+
+h6 {
+  font-size: 11px;
+  line-height: 19px;
+  margin-bottom: 5px;
+  color: #9B9E9F;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: .002em;
+  margin-bottom: 10px;
+}
+
+hr {
+  background: #D1D4D6;
+  color: #D1D4D6;
+  margin: 25px 0;
+}
+
+.hr-features {
+  max-width: 50px;
+  margin: 25px 0;
+}
+
+.features {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.h3-sub {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.features-box {
+  margin-right: 128px;
 }
