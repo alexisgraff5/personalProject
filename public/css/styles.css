@@ -221,3 +221,16 @@ hr {
 .features-box {
   margin-right: 128px;
 }
+
+/* search pages */
+.page-banner-text {
+  text-align: center;
+  margin: auto auto;
+  font-size: 24px;
+}
+
+.banner-box {
+  background-color: #F7F8F9;
+  display: flex;
+  height: 419px;
+}
