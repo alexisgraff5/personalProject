@@ -30,17 +30,43 @@ body {
 
 .menu-nav-container {
   background-color: #FFFFFF;
-  height: 100px;
+  height: 90px;
+  padding-top: 30px;
   margin-top: 19px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.main-menu-cont ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.site-nav {
+  margin: 0 20px;
+}
+
+.site-nav:hover {
+  border-bottom: 2px solid;
+}
+
+.sub-menu li {
+  font-size: 11px;
+  line-height: 18px;
+  margin: 10px 15px;
 }
 
 .search-box {
   border-color: #1E1E1E;
   border: 2px;
-  padding: 7px 20px;
   border-style: solid;
-  max-width: 150px;
+  width: 115px;
+  height: 35px;
+  text-align: center;
 }
 
 .email-offers {
