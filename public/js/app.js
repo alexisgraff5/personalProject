@@ -1,4 +1,21 @@
-angular.module('nixonClone', ['ui.router']).config(function($urlRouterProvider, $stateProvider) {
+angular.module('nixonClone', ['ui.router'])
+
+.filter('myFilter', function() {
+    return function(input, rentFilter) {
+      if (rentFilter === undefined || rentFilter === "") {
+        rentFilter = 3000000000000;
+      }
+      var out = [];
+      angular.forEach(input, function(apt) {
+        if (apt.rent < rentFilter) {
+          out.push(apt);
+        }
+      });
+      return out;
+    };
+  })
+
+.config(function($urlRouterProvider, $stateProvider) {
 
   $stateProvider.state('home', {
     url: '/home',
@@ -104,7 +121,7 @@ angular.module('nixonClone', ['ui.router']).config(function($urlRouterProvider, 
     url: '/mens-material-silicone',
     templateUrl: './views/mens/bands/mensSiliconeSearch.html',
     controller: 'productCtrl'
-  })
+  });
 
   $urlRouterProvider.otherwise('/home');
 

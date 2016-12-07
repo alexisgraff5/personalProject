@@ -8,23 +8,41 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>NixonClone</title>
   </head>
-  <body>
+  <body ng-controller='mainCtrl'>
     <div class='nav-container'>
-      <div class='black-bar-nav'></div>
+      <div class='black-bar-nav'>
+        <!-- Trigger/Open The Modal -->
+<button id="myBtn">LOGIN</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h1>LOGIN</h1>
+    <span class="close">x</span>
+    <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
+    <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
+    <button name="button" ng-click='loginUser()'>Login</button>
+  </div>
+
+</div>
+      </div>
       <div class='menu-nav-container'>
           <div>
             <a ui-sref='home'><img src='./img/alwaysOn/logo.png' width='120px'></a>
           </div>
           <div class='main-menu-cont'>
             <ul class='main-menu'>
-              <li class='site-nav'>MEN'S WATCHES</li>
+              <a ui-sref='mens-watches'><li class='site-nav' >MEN'S WATCHES</li></a>
                 <!-- <ul class='sub-menu'>
                   <li class='bottom-nav-list'>MODEL</li>
                 </ul>
                 <ul class='sub-menu'>
                   <li class='bottom-nav-list'>BAND MATERIAL</li>
                 </ul> -->
-              <li class='site-nav'>WOMEN'S WATCHES</li>
+              <a ui-sref='womens-watches'><li class='site-nav'>WOMEN'S WATCHES</li></a>
                 <!-- <ul class='sub-menu'>
                   <li class='bottom-nav-list'>MODEL</li>
                 </ul>
