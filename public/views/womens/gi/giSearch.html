@@ -1,1 +1,12 @@
-G.I.
+<div class="" ng-repeat="(key, value) in products">
+
+  {{key}}
+  <br>
+  <img width="154" height="220" ng-src="{{value.largeView}}" alt="" ng-click='viewProduct(key, value)'>
+  <div style="display: inline-block" ng-repeat="watch in value.watches" class="" ng-mouseover="showView(value, watch.view1)">
+    <a><img ng-src='{{watch.view1}}' width=45px></a>
+  </div>
+<hr>
+
+</div>
+</div>

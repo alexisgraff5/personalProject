@@ -98,6 +98,7 @@ body {
   font-size: 11px;
   line-height: 18px;
   margin: 10px 15px;
+  visibility: hidden;
 }
 
 .search-box {

@@ -24,6 +24,34 @@ angular.module('nixonClone')
     });
   };
 
+  this.getMensComp = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-comp'
+    });
+  };
+
+  this.getMensCorp = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-corp'
+    });
+  };
+
+  this.getMensDriver = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-driver'
+    });
+  };
+
+  this.getMensRollo = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-rollo'
+    });
+  };
+
   this.getMensLeather = function() {
     return $http({
       method: 'GET',
@@ -49,6 +77,20 @@ angular.module('nixonClone')
     return $http({
       method: 'GET',
       url: '/womens-watches'
+    });
+  };
+
+  this.getWomensKenzi = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-kenzi'
+    });
+  };
+
+  this.getWomensGi = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-gi'
     });
   };
 

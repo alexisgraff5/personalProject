@@ -25,7 +25,7 @@ angular.module('nixonClone')
       let state;
       switch (name) {
         case 'kenzi leather':
-          state = 'kenzi';
+          state = 'kenzi-leather';
           break;
         case 'g.i. leather':
           state = 'gi-leather';

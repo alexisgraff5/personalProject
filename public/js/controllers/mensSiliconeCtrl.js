@@ -25,7 +25,7 @@ angular.module('nixonClone')
       let state;
       switch (name) {
         case 'comp s':
-          state = 'comp';
+          state = 'comp-s';
           break;
         default:
           return;

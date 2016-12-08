@@ -1,6 +1,6 @@
 angular.module('nixonClone')
-.controller('mensLeatherCtrl', function( $scope, mainService, $state) {
-    mainService.getMensLeather().then(function(response){
+.controller('mensRolloCtrl', function( $scope, mainService, $state ) {
+    mainService.getMensRollo().then(function(response){
       let products = response.data;
       $scope.products = {};
       for (let i = 0; i < products.length; i++) {
@@ -26,9 +26,6 @@ angular.module('nixonClone')
       switch (name) {
         case 'rollo leather':
           state = 'rollo-leather';
-          break;
-        case 'driver leather':
-          state = 'driver-leather';
           break;
         default:
           return;

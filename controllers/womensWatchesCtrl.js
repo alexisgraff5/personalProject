@@ -9,6 +9,20 @@ module.exports = {
     });
   },
 
+  getWomensKenzi: function(req, res, next) {
+    db.get_womens_kenzi([], function(err, watches) {
+      if (err) return res.status(500).json(err);
+      return res.status(200).json(watches);
+    });
+  },
+
+  getWomensGi: function(req, res, next) {
+    db.get_womens_gi([], function(err, watches) {
+      if (err) return res.status(500).json(err);
+      return res.status(200).json(watches);
+    });
+  },
+
     getWomensLeather: function(req, res, next) {
       db.get_womens_leather([], function(err, watches) {
         if (err) return res.status(500).json(err);

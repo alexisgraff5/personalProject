@@ -25,7 +25,7 @@ angular.module('nixonClone')
       let state;
       switch (name) {
         case 'corporal ss':
-          state = 'corporal';
+          state = 'corporal-ss';
           break;
           case 'driver ss':
             state = 'driver-ss';
