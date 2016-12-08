@@ -32,6 +32,8 @@ app.post('/login', userCtrl.loginUser);
 app.get('/mens-watches', mensWatchesCtrl.getMensWatches);
 app.get('/womens-watches', womensWatchesCtrl.getWomensWatches);
 app.get('/womens-material-leather', womensWatchesCtrl.getWomensLeather);
+app.get('/womens-material-stainless', womensWatchesCtrl.getWomensStainless);
+app.get('/womens-material-nylon', womensWatchesCtrl.getWomensNylon);
 
 app.listen(config.port, function() {
   console.log('listening to port', config.port);

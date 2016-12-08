@@ -14,5 +14,19 @@ module.exports = {
         if (err) return res.status(500).json(err);
         return res.status(200).json(watches);
       });
+    },
+
+    getWomensStainless: function(req, res, next) {
+      db.get_womens_stainless([], function(err, watches) {
+        if (err) return res.status(500).json(err);
+        return res.status(200).json(watches);
+      });
+    },
+
+    getWomensNylon: function(req, res, next) {
+      db.get_womens_nylon([], function(err, watches) {
+        if (err) return res.status(500).json(err);
+        return res.status(200).json(watches);
+      });
     }
 };

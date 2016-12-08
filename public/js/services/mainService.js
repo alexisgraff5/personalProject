@@ -37,4 +37,19 @@ angular.module('nixonClone')
       url: '/womens-material-leather'
     });
   };
+
+  this.getWomensStainless = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-material-stainless'
+    });
+  };
+
+  this.getWomensNylon = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-material-nylon'
+    });
+  };
+
 });
