@@ -1,3 +1,21 @@
+<div>
+  <div>
+  <h6>{{selectedWatch.sku}}</h6>
+  <h1>{{selectedWatch.name}}, {{selectedWatch.size}}</h1>
+  <h5>{{selectedWatch.price | currency}}</h5>
+  <img width="154" height="220" ng-src="{{watches.largeView}}" alt="">
+  <img width="25" ng-src="{{selectedWatch.view1}}" alt="" ng-click='changeView(selectedWatch.view1)'>
+  <img width="25" ng-src="{{selectedWatch.view2}}" alt="" ng-click='changeView(selectedWatch.view2)'>
+  <img width="25" ng-src="{{selectedWatch.view3}}" alt="" ng-click='changeView(selectedWatch.view3)'>
+  <div class="" ng-repeat="watch in watches.watches" ng-click="changeWatch(watch)">
+      <a><img ng-src='{{watch.view1}}' width=45px></a>
+  </div>
+  <div class="">
+    <p>{{selectedWatch.color}}</p>
+    <p ng-show="selectedWatch.in_stock">In Stock</p>
+    <p ng-hide="selectedWatch.in_stock">Out of Stock</p>
+
+  </div>
 <div class='spec-container'>
   <div class='specs-text'>
     <div class='features-box'>
@@ -31,4 +49,5 @@
   </div>
   </div>
   <div class='large-product-image'><img src='../img/watches/mens/comp/comp-large-product-image.png'></div>
+</div>
 </div>

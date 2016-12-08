@@ -18,7 +18,7 @@ angular.module('nixonClone', ['ui.router'])
 .config(function($urlRouterProvider, $stateProvider) {
 
   $stateProvider.state('home', {
-    url: '/home',
+    url: '/',
     templateUrl: './views/home.html',
     controller: 'mainCtrl'
   })
@@ -137,19 +137,19 @@ angular.module('nixonClone', ['ui.router'])
   .state('mens-bands-stainless', {
     url: '/mens-material-stainless',
     templateUrl: './views/mens/bands/mensStainlessSearch.html',
-    controller: 'productCtrl'
+    controller: 'mensStainlessCtrl'
   })
   .state('mens-bands-leather', {
     url: '/mens-material-leather',
     templateUrl: './views/mens/bands/mensLeatherSearch.html',
-    controller: 'productCtrl'
+    controller: 'mensLeatherCtrl'
   })
   .state('mens-bands-silicone', {
     url: '/mens-material-silicone',
     templateUrl: './views/mens/bands/mensSiliconeSearch.html',
-    controller: 'productCtrl'
+    controller: 'mensSiliconeCtrl'
   });
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
 });

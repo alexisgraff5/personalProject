@@ -7,10 +7,15 @@
     <img src='../img/banners/mensBanners/banner-mens-watches.jpg'>
   </div>
   </div>
-  <div class="" ng-repeat="product in products">
-    {{product.name}}
-    {{product.gender}}
-    <a ui-sref=''><img src='{{product.view1}}' width=154px></a>
+  <div class="" ng-repeat="(key, value) in products">
+    <hr>
+    {{key}}
+    <br>
+    <img width="154" height="220" ng-src="{{value.largeView}}" alt="" ng-click='viewProduct(key, value)'>
+    <div style="display: inline-block" ng-repeat="watch in value.watches" class="" ng-mouseover="showView(value, watch.view1)">
+      <a><img ng-src='{{watch.view1}}' width=45px></a>
+    </div>
+
 
   </div>
-</div>
+  </div>
