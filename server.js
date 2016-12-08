@@ -30,6 +30,9 @@ app.use(session({
 
 app.post('/login', userCtrl.loginUser);
 app.get('/mens-watches', mensWatchesCtrl.getMensWatches);
+app.get('/mens-material-leather', mensWatchesCtrl.getMensLeather);
+app.get('/mens-material-stainless', mensWatchesCtrl.getMensStainless);
+app.get('/mens-material-silicone', mensWatchesCtrl.getMensSilicone);
 app.get('/womens-watches', womensWatchesCtrl.getWomensWatches);
 app.get('/womens-material-leather', womensWatchesCtrl.getWomensLeather);
 app.get('/womens-material-stainless', womensWatchesCtrl.getWomensStainless);

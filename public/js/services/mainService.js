@@ -24,6 +24,27 @@ angular.module('nixonClone')
     });
   };
 
+  this.getMensLeather = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-material-leather'
+    });
+  };
+
+  this.getMensStainless = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-material-stainless'
+    });
+  };
+
+  this.getMensSilicone = function() {
+    return $http({
+      method: 'GET',
+      url: '/mens-material-silicone'
+    });
+  };
+
   this.getWomensWatches = function() {
     return $http({
       method: 'GET',
