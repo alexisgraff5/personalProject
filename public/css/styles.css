@@ -68,38 +68,8 @@ body {
   color: #FFFFFF;
 }
 
-.menu-nav-container {
-  background-color: #FFFFFF;
-  height: 90px;
-  padding-top: 30px;
-  margin-top: 19px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 12px;
-  line-height: 30px;
-}
 
-.main-menu-cont ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
 
-.site-nav {
-  margin: 0 20px;
-}
-
-.site-nav:hover {
-  border-bottom: 2px solid;
-}
-
-.sub-menu li {
-  font-size: 11px;
-  line-height: 18px;
-  margin: 10px 15px;
-  visibility: hidden;
-}
 
 .search-box {
   border-color: #1E1E1E;
@@ -305,6 +275,13 @@ hr {
   margin-right: 128px;
 }
 
+.gray-bar-nav {
+  height: 40px;
+  background-color: #F7F8F9;
+  font-size: 11px;
+  color: #1E1E1E;
+}
+
 /* search pages */
 .page-banner-text {
   text-align: center;
@@ -321,3 +298,64 @@ hr {
 a {
   color: inherit;
 }
+
+/*<ul class='main-menu'>
+  <a ui-sref='mens-watches'><li class='site-nav' >MEN'S WATCHES</li></a>
+    <ul class='sub-menu'>
+      <li class='bottom-nav-list'>MODEL</li>
+      <li><a ui-sref='comp'>Comp</a></li>
+      <li><a ui-sref='corporal'>Corporal</a></li>
+      <li><a ui-sref='driver'>Driver</a></li>
+      <li><a ui-sref='rollo'>Rollo</a></li>
+      <li><a ui-sref=''>View All</a></li>
+    </ul>
+    <ul class='sub-menu'>
+      <li class='bottom-nav-list'>BAND MATERIAL</li>
+      <li><a ui-sref='mens-band-stainless'>Stainless Steel</a></li>
+      <li><a ui-sref='mens-band-leather'>Leather</a></li>
+      <li><a ui-sref='mens-band-silicone'>PU / Rubber / Silicone</a></li>
+      <li><a ui-sref='mens-bands'>View All</a></li>
+    </ul>
+  <a ui-sref='womens-watches'><li class='site-nav'>WOMEN'S WATCHES</li></a>
+    <!-- <ul class='sub-menu'>
+      <li class='bottom-nav-list'>MODEL</li>
+    </ul>
+    <ul class='sub-menu'>
+      <li class='bottom-nav-list'>BAND MATERIAL</li>
+    </ul> -->
+  <li class='site-nav'>BAGS & MORE</li>
+  <li class='site-nav'>SMART</li>
+  <li class='site-nav'>START WARS&#8482;</li>
+</ul>*/
+
+/*.menu-nav-container {
+  background-color: #FFFFFF;
+  height: 90px;
+  padding-top: 30px;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.main-menu-cont ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.site-nav {
+  margin: 0 20px;
+}
+
+.site-nav:hover {
+  border-bottom: 2px solid;
+}
+
+.sub-menu li {
+  font-size: 11px;
+  line-height: 18px;
+  margin: 10px 15px;
+}*/

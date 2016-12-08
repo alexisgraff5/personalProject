@@ -1,5 +1,5 @@
 angular.module('nixonClone')
-.controller('mainCtrl', function( $scope, mainService, $location ) {
+.controller('mainCtrl', function( $scope, mainService ) {
 
   // Get the modal
   var modal = document.getElementById('myModal');

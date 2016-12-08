@@ -14,7 +14,24 @@ angular.module('nixonClone')
 
   this.setUser = function(user) {
     this.user = user;
-    console.log(this.user);
+  };
+
+  this.addToCart = function(product) {
+    return $http({
+      method: 'POST',
+      url: '/cart',
+      data: {
+        product: product,
+        user: this.user.id
+      }
+    });
+  };
+
+  this.getCart = function() {
+    return $http({
+      method: 'GET',
+      url: '/cart/' + this.user.id
+    });
   };
 
   this.getMensWatches = function() {

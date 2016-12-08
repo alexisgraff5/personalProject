@@ -1,20 +1,5 @@
 angular.module('nixonClone', ['ui.router'])
 
-.filter('myFilter', function() {
-    return function(input, rentFilter) {
-      if (rentFilter === undefined || rentFilter === "") {
-        rentFilter = 3000000000000;
-      }
-      var out = [];
-      angular.forEach(input, function(apt) {
-        if (apt.rent < rentFilter) {
-          out.push(apt);
-        }
-      });
-      return out;
-    };
-  })
-
 .config(function($urlRouterProvider, $stateProvider) {
 
   $stateProvider.state('home', {
@@ -47,22 +32,22 @@ angular.module('nixonClone', ['ui.router'])
     templateUrl: './views/mens/rollo/rolloSearch.html',
     controller: 'mensRolloCtrl'
   })
-  .state('mens-bands-material', {
+  .state('mens-bands', {
     url: '/mens-band-material',
     templateUrl: './views/mens/bands/mensBandMaterial.html',
     controller: 'mensWatchesCtrl'
   })
-  .state('mens-bands-stainless', {
+  .state('mens-band-stainless', {
     url: '/mens-material-stainless',
     templateUrl: './views/mens/bands/mensStainlessSearch.html',
     controller: 'mensStainlessCtrl'
   })
-  .state('mens-bands-leather', {
+  .state('mens-band-leather', {
     url: '/mens-material-leather',
     templateUrl: './views/mens/bands/mensLeatherSearch.html',
     controller: 'mensLeatherCtrl'
   })
-  .state('mens-bands-silicone', {
+  .state('mens-band-silicone', {
     url: '/mens-material-silicone',
     templateUrl: './views/mens/bands/mensSiliconeSearch.html',
     controller: 'mensSiliconeCtrl'
@@ -127,17 +112,17 @@ angular.module('nixonClone', ['ui.router'])
     templateUrl: './views/womens/bands/womensBandMaterial.html',
     controller: 'womensWatchesCtrl'
   })
-  .state('womens-bands-stainless', {
+  .state('womens-band-stainless', {
     url: '/womens-material-stainless',
     templateUrl: './views/womens/bands/womensStainlessSearch.html',
     controller: 'womensStainlessCtrl'
   })
-  .state('womens-bands-leather', {
+  .state('womens-band-leather', {
     url: '/womens-material-leather',
     templateUrl: './views/womens/bands/womensLeatherSearch.html',
     controller: 'womensLeatherCtrl'
   })
-  .state('womens-bands-nylon', {
+  .state('womens-band-nylon', {
     url: '/womens-material-nylon',
     templateUrl: './views/womens/bands/womensNylonSearch.html',
     controller: 'womensNylonCtrl'
@@ -177,7 +162,7 @@ angular.module('nixonClone', ['ui.router'])
   .state('cart', {
     url: '/cart',
     templateUrl: './views/cart.html',
-    controller: 'productCtrl'
+    controller: 'cartCtrl'
   });
 
   $urlRouterProvider.otherwise('/');

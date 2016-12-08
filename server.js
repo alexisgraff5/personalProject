@@ -20,6 +20,7 @@ var db = app.get('db');
 var userCtrl = require('./controllers/userCtrl');
 var mensWatchesCtrl = require('./controllers/mensWatchesCtrl');
 var womensWatchesCtrl = require('./controllers/womensWatchesCtrl');
+var orderCtrl = require('./controllers/orderCtrl.js');
 
 
 app.use(session({
@@ -43,6 +44,8 @@ app.get('/womens-gi', womensWatchesCtrl.getWomensGi);
 app.get('/womens-material-leather', womensWatchesCtrl.getWomensLeather);
 app.get('/womens-material-stainless', womensWatchesCtrl.getWomensStainless);
 app.get('/womens-material-nylon', womensWatchesCtrl.getWomensNylon);
+app.post('/cart', orderCtrl.addToCart);
+app.get('/cart/:id', orderCtrl.getCart);
 
 app.listen(config.port, function() {
   console.log('listening to port', config.port);
