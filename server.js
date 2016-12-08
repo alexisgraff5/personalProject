@@ -18,7 +18,8 @@ app.set('db', massiveInstance);
 
 var db = app.get('db');
 var userCtrl = require('./controllers/userCtrl');
-var productsCtrl = require('./controllers/productsCtrl');
+var mensWatchesCtrl = require('./controllers/mensWatchesCtrl');
+var womensWatchesCtrl = require('./controllers/womensWatchesCtrl');
 
 
 app.use(session({
@@ -28,8 +29,9 @@ app.use(session({
 }));
 
 app.post('/login', userCtrl.loginUser);
-
-app.get('/products', productsCtrl.getProducts);
+app.get('/mens-watches', mensWatchesCtrl.getMensWatches);
+app.get('/womens-watches', womensWatchesCtrl.getWomensWatches);
+app.get('/womens-material-leather', womensWatchesCtrl.getWomensLeather);
 
 app.listen(config.port, function() {
   console.log('listening to port', config.port);

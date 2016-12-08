@@ -1,8 +1,16 @@
+<div>
 <div class='banner-box'>
 <div class='page-banner-text'>
   LEATHER
 </div>
 <div class='page-banner-image'>
   <img src='../img/banners/womensBanners/banner-women-band-leather.jpg'>
+</div>
+</div>
+<div class="" ng-repeat="product in products">
+  {{product.name}}
+  {{product.gender}}
+  <a ui-sref=''><img src='{{product.view1}}' width=154px></a>
+
 </div>
 </div>

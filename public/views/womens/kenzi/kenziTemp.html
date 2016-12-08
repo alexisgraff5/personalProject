@@ -1,3 +1,14 @@
+<div>
+  <img width="154" height="220" ng-src="{{watches.largeView}}" alt="">
+  <img width="25" ng-src="{{selectedWatch.view1}}" alt="">
+  <img width="25" ng-src="{{selectedWatch.view2}}" alt="">
+  <img width="25" ng-src="{{selectedWatch.view3}}" alt="">
+  <div class="" ng-repeat="watch in watches.watches">
+      <a><img ng-src='{{watch.view1}}' width=45px></a>
+  </div>
+
+
+
 <div class='spec-container'>
   <div class='specs-text'>
     <div class='features-box'>
@@ -25,4 +36,5 @@
   </div>
   </div>
   <div class='large-product-image'><img src='../img/watches/womens/kenzi/large-product-view.png'></div>
+</div>
 </div>

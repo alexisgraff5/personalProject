@@ -316,3 +316,7 @@ hr {
   display: flex;
   height: 419px;
 }
+
+a {
+  color: inherit;
+}

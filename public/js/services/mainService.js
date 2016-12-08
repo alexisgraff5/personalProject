@@ -17,10 +17,24 @@ angular.module('nixonClone')
     console.log(this.user);
   };
 
-  this.getProducts = function() {
+  this.getMensWatches = function() {
     return $http({
       method: 'GET',
-      url: '/products'
+      url: '/mens-watches'
+    });
+  };
+
+  this.getWomensWatches = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-watches'
+    });
+  };
+
+  this.getWomensLeather = function() {
+    return $http({
+      method: 'GET',
+      url: '/womens-material-leather'
     });
   };
 });

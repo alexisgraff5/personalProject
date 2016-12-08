@@ -25,57 +25,84 @@ angular.module('nixonClone', ['ui.router'])
   .state('mens-watches', {
     url: '/mens-watches',
     templateUrl: './views/mens/mensWatches.html',
-    controller: 'productCtrl'
+    controller: 'mensWatchesCtrl'
   })
   .state('womens-watches', {
     url: '/womens-watches',
     templateUrl: './views/womens/womensWatches.html',
-    controller: 'productCtrl'
+    controller: 'womensWatchesCtrl'
     })
   .state('comp', {
      url: '/mens-comp',
      templateUrl: './views/mens/comp/compTemp.html',
-     controller: 'productCtrl'
+     controller: 'productViewCtrl',
+     params: {
+       watches: null
+     }
    })
   .state('corporal', {
     url: '/mens-corporal',
     templateUrl: './views/mens/corporal/corporalTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('rollo', {
     url: '/mens-rollo',
     templateUrl: './views/mens/rollo/rolloTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('kenzi', {
     url: '/womens-kenzi',
     templateUrl: './views/womens/kenzi/kenziTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('driver-leather', {
     url: '/mens-driver-leather',
     templateUrl: './views/mens/driver/driverLeatherTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('driver-ss', {
     url: '/mens-driver-stainless',
     templateUrl: './views/mens/driver/driverSsTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('gi-leather', {
     url: '/womens-gi-leather',
     templateUrl: './views/womens/gi/giLeatherTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('gi-nylon', {
     url: '/womens-gi-nylon',
     templateUrl: './views/womens/gi/giNylonTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('gi-stainless', {
     url: '/womens-gi-stainless',
     templateUrl: './views/womens/gi/giSsTemp.html',
-    controller: 'productCtrl'
+    controller: 'productViewCtrl',
+    params: {
+      watches: null
+    }
   })
   .state('cart', {
     url: '/cart',
@@ -85,27 +112,27 @@ angular.module('nixonClone', ['ui.router'])
   .state('womens-bands', {
     url: '/womens-band-material',
     templateUrl: './views/womens/bands/womensBandMaterial.html',
-    controller: 'productCtrl'
+    controller: 'womensWatchesCtrl'
   })
   .state('womens-bands-stainless', {
     url: '/womens-material-stainless',
     templateUrl: './views/womens/bands/womensStainlessSearch.html',
-    controller: 'productCtrl'
+    controller: 'womensStainlessCtrl'
   })
   .state('womens-bands-leather', {
     url: '/womens-material-leather',
     templateUrl: './views/womens/bands/womensLeatherSearch.html',
-    controller: 'productCtrl'
+    controller: 'womensLeatherCtrl'
   })
   .state('womens-bands-nylon', {
     url: '/womens-material-nylon',
     templateUrl: './views/womens/bands/womensNylonSearch.html',
-    controller: 'productCtrl'
+    controller: 'womensNylonCtrl'
   })
   .state('mens-bands-material', {
     url: '/mens-band-material',
     templateUrl: './views/mens/bands/mensBandMaterial.html',
-    controller: 'productCtrl'
+    controller: 'mensWatchesCtrl'
   })
   .state('mens-bands-stainless', {
     url: '/mens-material-stainless',
