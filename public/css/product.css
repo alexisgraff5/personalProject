@@ -1,0 +1,56 @@
+/* individual product pages */
+.spec-container {
+  background-color: #F7F8F9;
+  display: flex;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.specs-text {
+  width: 39%;
+  margin-left: 120px;
+  padding-top: 25px;
+}
+
+.large-product-image {
+  width: 59%;
+}
+
+h6 {
+  font-size: 11px;
+  line-height: 19px;
+  margin-bottom: 5px;
+  color: #9B9E9F;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: .002em;
+  margin-bottom: 10px;
+}
+
+hr {
+  background: #D1D4D6;
+  color: #D1D4D6;
+  margin: 25px 0;
+}
+
+.hr-features {
+  max-width: 50px;
+  margin: 25px 0;
+}
+
+.features {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.h3-sub {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.features-box {
+  margin-right: 128px;
+}

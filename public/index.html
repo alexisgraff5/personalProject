@@ -6,41 +6,89 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/search.css">
+    <link rel="stylesheet" type="text/css" href="./css/cart.css">
+    <link rel="stylesheet" type="text/css" href="./css/product.css">
     <title>NixonClone</title>
   </head>
   <body ng-controller='mainCtrl'>
     <div class='nav-container'>
       <div class='black-bar-nav'>
         <!-- Trigger/Open The Modal -->
-<button id="myBtn">LOGIN</button>
+        <button id="myBtn">LOGIN</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <h1>LOGIN</h1>
+            <span class="close">x</span>
+            <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
+            <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
+            <button name="button" ng-click='loginUser()'>Login</button>
+            </div>
+          </div>
 
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <h1>LOGIN</h1>
-    <span class="close">x</span>
-    <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
-    <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
-    <button name="button" ng-click='loginUser()'>Login</button>
-  </div>
-
-</div>
 <p> CART </p>
       </div>
-      <!-- <div class='menu-nav-container'>
+      <div class='menu-nav-container'>
           <div>
             <a ui-sref='home'><img src='./img/alwaysOn/logo.png' width='120px'></a>
           </div>
-          <div class=''>
 
-          </div>
+          <div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+          <li>
+              <a ui-sref='mens-watches'>MEN'S WATCHES</a>
+
+              <ul class="sub-menu">
+                  <li>MODEL</li>
+                  <li><a ui-sref='comp'>Comp</a></li>
+                  <li><a ui-sref='corporal'>Corporal</a></li>
+                  <li><a ui-sref='driver'>Driver</a></li>
+                  <li><a ui-sref='rollo'>Rollo</a></li>
+                  <li><a ui-sref='mens-watches'>View All</a></li>
+              </ul>
+              <ul class="sub-menu">
+                  <li>BAND MATERIAL</li>
+                  <li><a ui-sref='mens-band-leather'>Leather</a></li>
+                  <li><a ui-sref='mens-band-silicone'>PU / Rubber / Silicone</a></li>
+                  <li><a ui-sref='mens-band-stainless'>Stainless Steel</a></li>
+                  <li><a ui-sref='mens-bands'>View All</a></li>
+              </ul>
+          </li>
+            <li>
+                <a ui-sref='womens-watches'>WOMEN'S WATCHES</a>
+
+                <ul class="sub-menu">
+                    <li>MODEL</li>
+                    <li><a ui-sref='gi'>G.I.</a></li>
+                    <li><a ui-sref='kenzi'>Kenzi</a></li>
+                    <li><a ui-sref='womens-watches'>View All</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li>BAND MATERIAL</a></li>
+                    <li><a ui-sref='womens-band-leather'>Leather</a></li>
+                    <li><a ui-sref='womens-band-nylon'>Nylon</a></li>
+                    <li><a ui-sref='womens-band-stainless'>Stainless Steel</a></li>
+                    <li><a ui-sref='womens-bands'>View All</a></li>
+                </ul>
+            </li>
+            <li>BAGS & MORE</li>
+            <li>SMART</li>
+            <li>STAR WARS&#8482;</li>
+        </ul>
+    </nav>
+</div>
+
+
           <div>
             <div class='search-box'>Search</div>
           </div>
-      </div> -->
+      </div>
     </div>
     <div ui-view></div>
     <div class='email-offers'>
