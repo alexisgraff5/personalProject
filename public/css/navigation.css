@@ -36,15 +36,29 @@
 
 .top-level {
   margin: auto 20px;
-}
-
-.top-level:hover {
-  border-bottom: 2px solid;
+  position: relative
 }
 
 .bottom-level {
   background-color: #FFFFFF;
   padding: 20px;
+  display: none;
+}
+
+.top-level-hover:hover {
+  border-bottom: 2px solid;
+}
+
+.top-level-static:hover {
+  border-bottom: 2px solid;
+}
+
+.top-level:hover .bottom-level {
+  display: inline-block;
+}
+
+.nav-col {
+
 }
 
 .sub-nav-hr {

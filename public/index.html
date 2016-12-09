@@ -30,7 +30,7 @@
             </div>
           </div>
         <div class='enter-cart'>
-          <a ui-sref='cart'><p>CART</p></a>
+          <a ui-sref='cart'>CART</a>
         </div>
       </div>
 
@@ -40,11 +40,11 @@
         </div>
 
         <div class='main-navigation'>
-          <div class='top-level'><a ui-sref='mens-watches'>MEN'S WATCHES</a></div>
-          <div class='top-level'><a ui-sref='womens-watches'>WOMEN'S WATCHES</a></div>
-          <div class='top-level'>BAGS & MORE</div>
-          <div class='top-level'>SMART</div>
-          <div class='top-level'>STAR WARS&#8482;</div>
+          <div class='top-level'><a class='top-level-hover' ui-sref='mens-watches'>MEN'S WATCHES</a></div>
+          <div class='top-level'><a class='top-level-hover' ui-sref='womens-watches'>WOMEN'S WATCHES</a></div>
+          <div class='top-level top-level-static'>BAGS & MORE</div>
+          <div class='top-level top-level-static'>SMART</div>
+          <div class='top-level top-level-static'>STAR WARS&#8482;</div>
         </div>
 
         <div class='search-box'>
@@ -57,7 +57,7 @@
     <div ui-view></div>
     <div class='email-offers'>
       <div class='emails'>Get Exclusive Offers & More!</div>
-      <div class='enter-email'><input type="text" id="email-alert-address" placeholder="Enter Email Address" class="input-text email required" value="" aria-required="true"></div>
+      <div class='enter-email'><input type="text" placeholder="Enter Email Address" class="input-text email required" value="" aria-required="true"></div>
       <div class='email-button'><input type="submit" class="btn btn-join" name="home-email" value="JOIN"></div>
     </div>
     <div class='bottom-nav'>
@@ -135,3 +135,34 @@
     <script src=''></script>
   </body>
 </html>
+
+<!-- <div class='bottom-level'>
+  <div class='nav-col'>
+    <a ui-sref='mens-watches'>MODEL</a>
+    <hr class='sub-nav-hr'>
+    <a ui-sref='comp'>Comp</a>
+    <a ui-sref='corporal'>Corporal</a>
+    <a ui-sref='driver'>Driver</a>
+    <a ui-sref='rollo'>Rollo</a>
+    <a ui-sref='mens-watches'>View All</a>
+  </div>
+  <div>
+    <a ui-sref='mens-bands'>BAND MATERIAL</a>
+    <a ui-sref='mens-band-leather'>Leather</a>
+    <a ui-sref='mens-band-silicone'>PU / Rubber / Silicone</a>
+    <a ui-sref='mens-band-stainless'>Stainless Steel</a>
+    <a ui-sref='mens-bands'>View All</a>
+  </div>
+</div>
+
+
+      <a ui-sref='womens-watches'>MODEL</a>
+      <a ui-sref='gi'>G.I.</a>
+      <a ui-sref='kenzi'>Kenzi</a>
+      <a ui-sref='womens-watches'>View All</a>
+
+      <a ui-sref='womens-bands'>BAND MATERIAL</a>
+      <a ui-sref='womens-band-leather'>Leather</a>
+      <a ui-sref='womens-band-nylon'>Nylon</a>
+      <a ui-sref='womens-band-stainless'>Stainless Steel</a>
+      <a ui-sref='womens-bands'>View All</a> -->
