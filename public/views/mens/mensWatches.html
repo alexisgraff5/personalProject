@@ -7,9 +7,8 @@
     <img src='../img/banners/mensBanners/banner-mens-watches.jpg'>
   </div>
   </div>
-  <div class='gray-bar-nav'></div>
+  <div class='gray-bar-border gray-bar-nav'></div>
   <div class="" ng-repeat="(key, value) in products">
-    <hr>
     {{key}}
     <br>
     <img width="154" height="220" ng-src="{{value.largeView}}" alt="" ng-click='viewProduct(key, value)'>

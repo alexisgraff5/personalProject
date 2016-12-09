@@ -42,21 +42,28 @@
 .bottom-level {
   background-color: #FFFFFF;
   padding: 20px;
-  display: none;
+  /*display: none;*/
+  z-index: 5;
 }
 
 .top-level-hover:hover {
   border-bottom: 2px solid;
 }
 
-.top-level:hover .bottom-level {
-  display: inline-block;
+.nav-col {
+  font-size: 11px;
+  background-color: #FFFFFF;
 }
 
-.nav-col {
-
+.sub:hover {
+  color: #D1D4D6;
 }
 
 .sub-nav-hr {
   color: #eef0f0;
+  margin: 0;
+  height: 1px;
+  margin: 0;
+  text-align: left;
+  border: 0;
 }

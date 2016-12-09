@@ -32,6 +32,7 @@ angular.module('nixonClone')
     mainService.loginUser($scope.email, $scope.password).then(function(response) {
       $scope.user = response.data[0];
       mainService.setUser($scope.user);
+      
     });
   };
 

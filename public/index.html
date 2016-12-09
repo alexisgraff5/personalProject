@@ -27,7 +27,7 @@
               <span class="close">x</span>
               <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
               <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
-              <button name="button" ng-click='loginUser()'>Login</button>
+              <button class='btn' name="button" ng-click='loginUser()'>LOGIN</button>
             </div>
           </div>
         <div class='enter-cart'>
@@ -49,36 +49,42 @@
           <div class='top-level'><a class='top-level-hover' ui-sref='#'>STAR WARS&#8482;</a></div>
         </div>
 
-        <!-- <div class='bottom-level'>
+        <div class='bottom-level'>
           <div class='nav-col'>
             <a ui-sref='mens-watches'>MODEL</a>
             <hr class='sub-nav-hr'>
-            <a ui-sref='comp'>Comp</a>
-            <a ui-sref='corporal'>Corporal</a>
-            <a ui-sref='driver'>Driver</a>
-            <a ui-sref='rollo'>Rollo</a>
-            <a ui-sref='mens-watches'>View All</a>
+            <a ui-sref='comp'class='sub'>Comp</a>
+            <a ui-sref='corporal' class='sub'>Corporal</a>
+            <a ui-sref='driver' class='sub'>Driver</a>
+            <a ui-sref='rollo' class='sub'>Rollo</a>
+            <a ui-sref='mens-watches' class='sub'>View All</a>
           </div>
-          <div>
+          <div class='nav-col'>
             <a ui-sref='mens-bands'>BAND MATERIAL</a>
-            <a ui-sref='mens-band-leather'>Leather</a>
-            <a ui-sref='mens-band-silicone'>PU / Rubber / Silicone</a>
-            <a ui-sref='mens-band-stainless'>Stainless Steel</a>
-            <a ui-sref='mens-bands'>View All</a>
+            <hr class='sub-nav-hr'>
+            <a ui-sref='mens-band-leather' class='sub'>Leather</a>
+            <a ui-sref='mens-band-silicone' class='sub'>PU / Rubber / Silicone</a>
+            <a ui-sref='mens-band-stainless' class='sub'>Stainless Steel</a>
+            <a ui-sref='mens-bands' class='sub'>View All</a>
           </div>
         </div>
-
-
-              <a ui-sref='womens-watches'>MODEL</a>
-              <a ui-sref='gi'>G.I.</a>
-              <a ui-sref='kenzi'>Kenzi</a>
-              <a ui-sref='womens-watches'>View All</a>
-
-              <a ui-sref='womens-bands'>BAND MATERIAL</a>
-              <a ui-sref='womens-band-leather'>Leather</a>
-              <a ui-sref='womens-band-nylon'>Nylon</a>
-              <a ui-sref='womens-band-stainless'>Stainless Steel</a>
-              <a ui-sref='womens-bands'>View All</a> -->
+        <div class='bottom-level'>
+          <div class='nav-col'>
+            <a ui-sref='womens-watches'>MODEL</a>
+            <hr class='sub-nav-hr'>
+            <a ui-sref='gi' class='sub'>G.I.</a>
+            <a ui-sref='kenzi' class='sub'>Kenzi</a>
+            <a ui-sref='womens-watches' class='sub'>View All</a>
+          </div>
+          <div class='nav-col'>
+            <a ui-sref='womens-bands'>BAND MATERIAL</a>
+            <hr class='sub-nav-hr'>
+            <a ui-sref='womens-band-leather' class='sub'>Leather</a>
+            <a ui-sref='womens-band-nylon' class='sub'>Nylon</a>
+            <a ui-sref='womens-band-stainless' class='sub'>Stainless Steel</a>
+            <a ui-sref='womens-bands' class='sub'>View All</a>
+          </div>
+        </div>
 
         <div class='search-box'>
           <div class='search'>Search</div>
@@ -89,7 +95,7 @@
     <div ui-view></div>
 
     <div>
-    <div class='email-offers'>
+    <div class='email-offers gray-bar-border'>
       <div class='emails'>Get Exclusive Offers & More!</div>
       <div class='enter-email'><input type="text" placeholder="Enter Email Address" class="input-text email required" value="" aria-required="true"></div>
       <div class='email-button'><input type="submit" class="btn btn-join" name="home-email" value="JOIN"></div>
