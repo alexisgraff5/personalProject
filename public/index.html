@@ -38,12 +38,12 @@
             <a ui-sref='home'><img src='./img/alwaysOn/logo.png' width='120px'></a>
           </div>
 
-          <div class="menu-wrap">
-    <nav class="menu">
+  <div class="menu-wrap">
+    <div class="menu">
         <ul class="clearfix">
-          <li>
-              <a ui-sref='mens-watches'>MEN'S WATCHES</a>
-
+          <li class='top-level'><a ui-sref='mens-watches'>MEN'S WATCHES</a>
+              <div class='sub-menu-cont'>
+                <div>
               <ul class="sub-menu">
                   <li>MODEL</li>
                   <li><a ui-sref='comp'>Comp</a></li>
@@ -52,6 +52,8 @@
                   <li><a ui-sref='rollo'>Rollo</a></li>
                   <li><a ui-sref='mens-watches'>View All</a></li>
               </ul>
+            </div>
+            <div>
               <ul class="sub-menu">
                   <li>BAND MATERIAL</li>
                   <li><a ui-sref='mens-band-leather'>Leather</a></li>
@@ -59,16 +61,21 @@
                   <li><a ui-sref='mens-band-stainless'>Stainless Steel</a></li>
                   <li><a ui-sref='mens-bands'>View All</a></li>
               </ul>
+            </div>
+            </div>
           </li>
-            <li>
+            <li class='top-level'>
                 <a ui-sref='womens-watches'>WOMEN'S WATCHES</a>
-
+                <div class='sub-menu-cont'>
+                  <div>
                 <ul class="sub-menu">
                     <li>MODEL</li>
                     <li><a ui-sref='gi'>G.I.</a></li>
                     <li><a ui-sref='kenzi'>Kenzi</a></li>
                     <li><a ui-sref='womens-watches'>View All</a></li>
                 </ul>
+              </div>
+              <div>
                 <ul class="sub-menu">
                     <li>BAND MATERIAL</a></li>
                     <li><a ui-sref='womens-band-leather'>Leather</a></li>
@@ -76,12 +83,14 @@
                     <li><a ui-sref='womens-band-stainless'>Stainless Steel</a></li>
                     <li><a ui-sref='womens-bands'>View All</a></li>
                 </ul>
+              </div>
+              </div>
             </li>
-            <li>BAGS & MORE</li>
-            <li>SMART</li>
-            <li>STAR WARS&#8482;</li>
+            <li class='top-level'>BAGS & MORE</li>
+            <li class='top-level'>SMART</li>
+            <li class='top-level'>STAR WARS&#8482;</li>
         </ul>
-    </nav>
+    </div>
 </div>
 
 
