@@ -7,8 +7,8 @@
   <img width="25" ng-src="{{selectedWatch.view1}}" alt="" ng-click='changeView(selectedWatch.view1)'>
   <img width="25" ng-src="{{selectedWatch.view2}}" alt="" ng-click='changeView(selectedWatch.view2)'>
   <img width="25" ng-src="{{selectedWatch.view3}}" alt="" ng-click='changeView(selectedWatch.view3)'>
-  <div class="" ng-repeat="watch in watches.watches" ng-click="changeWatch(watch)">
-      <a><img ng-src='{{watch.view1}}' width=45px></a>
+  <div class="" ng-repeat="watch in watches.watches" ng-click="changeWatch(watch)" >
+      <img ng-src='{{watch.view1}}' width=45px />
   </div>
   <div class="">
     <p>{{selectedWatch.color}}</p>

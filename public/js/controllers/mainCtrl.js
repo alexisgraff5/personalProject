@@ -10,6 +10,8 @@ angular.module('nixonClone')
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
+  var login = document.getElementById('exit');
+
   // When the user clicks on the button, open the modal
   btn.onclick = function() {
       modal.style.display = "block";
@@ -28,11 +30,25 @@ angular.module('nixonClone')
   };
 
   $scope.loginUser = function() {
-    console.log("Fired login");
-    mainService.loginUser($scope.email, $scope.password).then(function(response) {
+    mainService.loginUser($scope.emailLogin, $scope.passwordLogin).then(function(response) {
       $scope.user = response.data[0];
+      console.log(response);
       mainService.setUser($scope.user);
-      
+      if (response.data.length > 0) {
+        modal.style.display = "none";
+      } else {
+        alert('Incorrect email or password. Please try again.');
+      }
+
+    });
+  };
+
+  $scope.registerUser = function() {
+    console.log("Fired login");
+    mainService.registerUser($scope.user).then(function(response) {
+      $scope.user = response.data[0];
+      alert('Thank you for registering, please login to continue');
+
     });
   };
 

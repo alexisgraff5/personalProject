@@ -30,6 +30,7 @@ app.use(session({
 }));
 
 app.post('/login', userCtrl.loginUser);
+app.post('/register', userCtrl.registerUser);
 app.get('/mens-watches', mensWatchesCtrl.getMensWatches);
 app.get('/mens-comp', mensWatchesCtrl.getMensComp);
 app.get('/mens-corp', mensWatchesCtrl.getMensCorp);
@@ -48,6 +49,7 @@ app.post('/cart', orderCtrl.addToCart);
 app.get('/cart/:id', orderCtrl.getCart);
 app.delete('/cart/:userId/:orderItemId', orderCtrl.removeItem);
 app.put('/cart/:userId/:orderId', orderCtrl.checkout);
+
 app.listen(config.port, function() {
   console.log('listening to port', config.port);
 });

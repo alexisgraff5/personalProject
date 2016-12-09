@@ -16,6 +16,14 @@ angular.module('nixonClone')
     this.user = user;
   };
 
+  this.registerUser = function(user) {
+    return $http({
+      url: '/register',
+      method: 'POST',
+      data: user
+    });
+  }
+
   this.addToCart = function(product) {
     return $http({
       method: 'POST',

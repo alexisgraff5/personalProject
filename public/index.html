@@ -23,11 +23,21 @@
           <div class="modal" id='myModal'>
             <!-- Modal content -->
             <div class="modal-content">
+              <div>
               <h1>LOGIN</h1>
               <span class="close">x</span>
-              <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
-              <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
-              <button class='btn' name="button" ng-click='loginUser()'>LOGIN</button>
+              <input name='email' type='email' placeholder='Email' ng-model='emailLogin'/><br/>
+              <input name='password' type='password' placeholder='Password' ng-model='passwordLogin'/><br/>
+              <button class='btn' id='exit' name="button" ng-click='loginUser()'>LOGIN</button>
+            </div>
+            <div>
+            <h1>REGISTER</h1>
+            <input name='firstname' type='firstname' placeholder='firstname' ng-model='user.firstname'/><br/>
+            <input name='lastname' type='lastname' placeholder='lastname' ng-model='user.lastname'/><br/>
+            <input name='email' type='email' placeholder='Email' ng-model='user.email'/><br/>
+            <input name='password' type='password' placeholder='Password' ng-model='user.password'/><br/>
+            <button class='btn' name="button" ng-click='registerUser()'>REGISTER</button>
+          </div>
             </div>
           </div>
         <div class='enter-cart'>
