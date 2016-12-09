@@ -13,92 +13,47 @@
     <link rel="stylesheet" type="text/css" href="./css/product.css">
     <title>NixonClone</title>
   </head>
+
   <body ng-controller='mainCtrl'>
-    <div class='nav-container'>
-      <div class='black-bar-nav'>
+    <div class='black-bar-nav'>
         <!-- Trigger/Open The Modal -->
-        <button id="myBtn">LOGIN</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <h1>LOGIN</h1>
-            <span class="close">x</span>
-            <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
-            <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
-            <button name="button" ng-click='loginUser()'>Login</button>
+        <button class="login-btn">LOGIN</button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <h1>LOGIN</h1>
+              <span class="close">x</span>
+              <input name='email' type='email' placeholder='Email' ng-model='email'/><br/>
+              <input name='password' type='password' placeholder='Password' ng-model='password'/><br/>
+              <button name="button" ng-click='loginUser()'>Login</button>
             </div>
           </div>
-
-<p> CART </p>
+        <div class='enter-cart'>
+          <a ui-sref='cart'><p>CART</p></a>
+        </div>
       </div>
-      <div class='menu-nav-container'>
-          <div>
-            <a ui-sref='home'><img src='./img/alwaysOn/logo.png' width='120px'></a>
-          </div>
 
-  <div class="menu-wrap">
-    <div class="menu">
-        <ul class="clearfix">
-          <li class='top-level'><a ui-sref='mens-watches'>MEN'S WATCHES</a>
-              <div class='sub-menu-cont'>
-                <div>
-              <ul class="sub-menu">
-                  <li>MODEL</li>
-                  <li><a ui-sref='comp'>Comp</a></li>
-                  <li><a ui-sref='corporal'>Corporal</a></li>
-                  <li><a ui-sref='driver'>Driver</a></li>
-                  <li><a ui-sref='rollo'>Rollo</a></li>
-                  <li><a ui-sref='mens-watches'>View All</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul class="sub-menu">
-                  <li>BAND MATERIAL</li>
-                  <li><a ui-sref='mens-band-leather'>Leather</a></li>
-                  <li><a ui-sref='mens-band-silicone'>PU / Rubber / Silicone</a></li>
-                  <li><a ui-sref='mens-band-stainless'>Stainless Steel</a></li>
-                  <li><a ui-sref='mens-bands'>View All</a></li>
-              </ul>
-            </div>
-            </div>
-          </li>
-            <li class='top-level'>
-                <a ui-sref='womens-watches'>WOMEN'S WATCHES</a>
-                <div class='sub-menu-cont'>
-                  <div>
-                <ul class="sub-menu">
-                    <li>MODEL</li>
-                    <li><a ui-sref='gi'>G.I.</a></li>
-                    <li><a ui-sref='kenzi'>Kenzi</a></li>
-                    <li><a ui-sref='womens-watches'>View All</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="sub-menu">
-                    <li>BAND MATERIAL</a></li>
-                    <li><a ui-sref='womens-band-leather'>Leather</a></li>
-                    <li><a ui-sref='womens-band-nylon'>Nylon</a></li>
-                    <li><a ui-sref='womens-band-stainless'>Stainless Steel</a></li>
-                    <li><a ui-sref='womens-bands'>View All</a></li>
-                </ul>
-              </div>
-              </div>
-            </li>
-            <li class='top-level'>BAGS & MORE</li>
-            <li class='top-level'>SMART</li>
-            <li class='top-level'>STAR WARS&#8482;</li>
-        </ul>
-    </div>
-</div>
+      <div class='container'>
+        <div class='logo'>
+          <a ui-sref='home'><img src='./img/alwaysOn/logo.png' width='120px'></a>
+        </div>
 
+        <div class='main-navigation'>
+          <div class='top-level'><a ui-sref='mens-watches'>MEN'S WATCHES</a></div>
+          <div class='top-level'><a ui-sref='womens-watches'>WOMEN'S WATCHES</a></div>
+          <div class='top-level'>BAGS & MORE</div>
+          <div class='top-level'>SMART</div>
+          <div class='top-level'>STAR WARS&#8482;</div>
+        </div>
 
-          <div>
-            <div class='search-box'>Search</div>
-          </div>
+        <div class='search-box'>
+          <div class='search'>Search</div>
+        </div>
       </div>
-    </div>
+
+
+
     <div ui-view></div>
     <div class='email-offers'>
       <div class='emails'>Get Exclusive Offers & More!</div>

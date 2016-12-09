@@ -1,16 +1,17 @@
-
-
 /* navigation */
-.menu-nav-container {
+.container {
   background-color: #FFFFFF;
   height: 90px;
-  padding-top: 30px;
   margin-top: 19px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 20px;
+}
+
+.logo {
+  padding-top: 30px;
 }
 
 .search-box {
@@ -18,51 +19,34 @@
   border: 2px;
   border-style: solid;
   width: 115px;
-  height: 35px;
+  height: 32px;
+  margin-top: 28px;
+}
+
+.search {
   text-align: center;
+  vertical-align: middle;
+  padding-top: 4px;
 }
 
-.clearfix:after {
-  display: inline-block;
-  clear: both;
-}
-
-.menu {
-  display: inline-block;
-  position: relative;
-}
-
-.sub-menu-cont {
+.main-navigation {
   display: flex;
   justify-content: space-around;
-  background-color: #FFFFFF;
+}
+
+.top-level {
+  margin: auto 20px;
 }
 
 .top-level:hover {
   border-bottom: 2px solid;
 }
 
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
+.bottom-level {
+  background-color: #FFFFFF;
+  padding: 20px;
 }
 
-.sub-menu {
-  float: left;
-  padding:5px 0px;
-  position:absolute;
-  z-index:-1;
-  opacity:0;
-  transition:opacity linear 0.15s;
-  background:#FFFFFF;
-}
-
-.sub-menu li {
-  font-size: 11px;
-  line-height: 18px;
-  margin: 0px 15px;
-}
-
-.sub-menu li > a:hover {
-  color: #acb1b4;
+.sub-nav-hr {
+  color:
 }
