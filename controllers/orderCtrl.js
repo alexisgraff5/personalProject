@@ -25,5 +25,23 @@ module.exports = {
       if(err) return res.status(500).json(err);
       return res.status(201).json(cart);
     });
+  },
+  removeItem: function(req, res, next) {
+    db.remove_item([req.params.orderItemId], function(err, deletedItem) {
+      if (err) return res.status(500).json(err);
+      db.get_cart([req.params.userId], function(err, cart) {
+        if (err) return res.status(500).json(err);
+        return res.status(200).json(cart);
+      });
+    });
+  },
+  checkout: function(req, res, next) {
+    db.checkout([req.params.orderId], function(err, updatedCart) {
+      if (err) return res.status(500).json(err);
+      db.get_cart([req.params.userId], function(err, cart) {
+        if (err) return res.status(500).json(err);
+        return res.status(200).json(cart);
+      });
+    });
   }
 };

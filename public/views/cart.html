@@ -1,7 +1,13 @@
 <div class='gray-bar-nav'></div>
 SHOPPING CART
 <div>
+  <button type="button" name="button" ng-click="checkout()" class='btn'>Checkout</button>
   <div ng-repeat='item in cart'>
     {{item}}
+    <img ng-src="{{item.view1}}" width=20px alt="">
+    <h3>{{item.name}}</h3>
+    <button type="button" name="button" ng-click="removeItem(item.orderitemid)">Remove</button>
   </div>
+  <h2>{{total | currency}}</h2>
+
 </div>

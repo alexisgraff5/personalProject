@@ -46,7 +46,8 @@ app.get('/womens-material-stainless', womensWatchesCtrl.getWomensStainless);
 app.get('/womens-material-nylon', womensWatchesCtrl.getWomensNylon);
 app.post('/cart', orderCtrl.addToCart);
 app.get('/cart/:id', orderCtrl.getCart);
-
+app.delete('/cart/:userId/:orderItemId', orderCtrl.removeItem);
+app.put('/cart/:userId/:orderId', orderCtrl.checkout);
 app.listen(config.port, function() {
   console.log('listening to port', config.port);
 });

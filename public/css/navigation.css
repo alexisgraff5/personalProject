@@ -49,10 +49,6 @@
   border-bottom: 2px solid;
 }
 
-.top-level-static:hover {
-  border-bottom: 2px solid;
-}
-
 .top-level:hover .bottom-level {
   display: inline-block;
 }
@@ -62,5 +58,5 @@
 }
 
 .sub-nav-hr {
-  color:
+  color: #eef0f0;
 }

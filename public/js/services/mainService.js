@@ -34,6 +34,20 @@ angular.module('nixonClone')
     });
   };
 
+  this.removeItem = function(id) {
+    return $http({
+      method: 'DELETE',
+      url: '/cart/' + this.user.id + '/' + id
+    });
+  };
+
+  this.checkout = function(orderId) {
+    return $http({
+      method: 'PUT',
+      url: '/cart/' + this.user.id + '/' + orderId
+    });
+  };
+
   this.getMensWatches = function() {
     return $http({
       method: 'GET',
