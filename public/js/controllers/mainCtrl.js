@@ -37,7 +37,12 @@ angular.module('nixonClone')
       if (response.data.length > 0) {
         modal.style.display = "none";
       } else {
-        alert('Incorrect email or password. Please try again.');
+        swal({
+  title: "Error!",
+  text: "Incorrect email or password. Please try again.",
+  type: "error",
+  confirmButtonText: "Cool"
+});
       }
 
     });
@@ -47,8 +52,12 @@ angular.module('nixonClone')
     console.log("Fired login");
     mainService.registerUser($scope.user).then(function(response) {
       $scope.user = response.data[0];
-      alert('Thank you for registering, please login to continue');
-
+      swal({
+        title: "Registered!",
+        text: "Thank you for registering, please login to continue",
+        type: "success",
+        confirmButtonText: "Cool"
+});
     });
   };
 
