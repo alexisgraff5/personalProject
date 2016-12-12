@@ -8,8 +8,7 @@
 </div>
 </div>
 <div class='gray-bar-border gray-bar-nav'></div>
-<div class="" ng-repeat="(key, value) in products">
-  <hr>
+<div class="row row-padding" ng-repeat="(key, value) in products">
   {{key}}
   <br>
   <img width="154" height="220" ng-src="{{value.largeView}}" alt="" ng-click='viewProduct(key, value)'>

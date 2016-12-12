@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./css/search.css">
     <link rel="stylesheet" type="text/css" href="./css/cart.css">
     <link rel="stylesheet" type="text/css" href="./css/product.css">
-    <title>NixonClone</title>
+    <title>NixonCloneish</title>
   </head>
 
   <body ng-controller='mainCtrl'>
@@ -22,22 +22,25 @@
           <!-- The Modal -->
           <div class="modal" id='myModal'>
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content register-login">
               <div>
-              <h1>LOGIN</h1>
-              <span class="close">x</span>
+
+              <h2>Register</h2>
+              <input name='firstname' type='firstname' placeholder='firstname' ng-model='user.firstname'/><br/>
+              <input name='lastname' type='lastname' placeholder='lastname' ng-model='user.lastname'/><br/>
+              <input name='email' type='email' placeholder='Email' ng-model='user.email'/><br/>
+              <input name='password' type='password' placeholder='Password' ng-model='user.password'/><br/>
+              <br/>
+              <button class='btn' name="button" ng-click='registerUser()'>REGISTER</button>
+            </div>
+              <div>
+              <h2>Already Registered? Login</h2>
               <input name='email' type='email' placeholder='Email' ng-model='emailLogin'/><br/>
               <input name='password' type='password' placeholder='Password' ng-model='passwordLogin'/><br/>
+              <br/>
               <button class='btn' id='exit' name="button" ng-click='loginUser()'>LOGIN</button>
             </div>
-            <div>
-            <h1>REGISTER</h1>
-            <input name='firstname' type='firstname' placeholder='firstname' ng-model='user.firstname'/><br/>
-            <input name='lastname' type='lastname' placeholder='lastname' ng-model='user.lastname'/><br/>
-            <input name='email' type='email' placeholder='Email' ng-model='user.email'/><br/>
-            <input name='password' type='password' placeholder='Password' ng-model='user.password'/><br/>
-            <button class='btn' name="button" ng-click='registerUser()'>REGISTER</button>
-          </div>
+            <span class="close">x</span>
             </div>
           </div>
         <div class='enter-cart'>

@@ -8,6 +8,24 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: 24px;
+  padding: 10px 0 20px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  display: inline-block;
+  padding: auto 20px;
+}
+
+.row-padding {
+  margin: 10px 30px;
+}
+
 .gray-bar-border {
   background-color: #F7F8F9;
   border-width: 1px;

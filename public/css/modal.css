@@ -23,6 +23,11 @@
     height: 600px;
 }
 
+.register-login {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
