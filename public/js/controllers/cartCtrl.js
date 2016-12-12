@@ -6,7 +6,7 @@ angular.module('nixonClone')
       totalCart();
     });
 
-    $scope.removeItem = function(id) {
+    $scope.removeItem = (id) => {
       mainService.removeItem(id).then(function(response){
         console.log(response.data);
         $scope.cart = response.data;
@@ -21,7 +21,7 @@ angular.module('nixonClone')
       }
     }
 
-    $scope.checkout = function() {
+    $scope.checkout = () => {
       mainService.checkout($scope.cart[0].orderid).then(function(response){
         $scope.cart  = response.data;
         totalCart();
