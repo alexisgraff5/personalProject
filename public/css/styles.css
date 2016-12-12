@@ -221,3 +221,20 @@ h4 {
 .home-buttons .btn {
   display: inline-block;
 }
+
+.three-image {
+  display: flex;
+  justify-content: center;
+}
+
+.home-three-image {
+  width: 300px;
+  height: 244px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.two-image {
+  margin: 10px;
+  padding: 10px;
+}
