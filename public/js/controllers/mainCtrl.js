@@ -13,12 +13,12 @@ angular.module('nixonClone')
   var login = document.getElementById('exit');
 
   // When the user clicks on the button, open the modal
-  btn.onclick = function() {
+  btn.onclick = () => {
       modal.style.display = "block";
   };
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
+  span.onclick = () => {
       modal.style.display = "none";
   };
 
@@ -29,7 +29,7 @@ angular.module('nixonClone')
       }
   };
 
-  $scope.loginUser = function() {
+  $scope.loginUser = () => {
     mainService.loginUser($scope.emailLogin, $scope.passwordLogin).then(function(response) {
       $scope.user = response.data[0];
       console.log(response);
@@ -48,7 +48,7 @@ angular.module('nixonClone')
     });
   };
 
-  $scope.registerUser = function() {
+  $scope.registerUser = () => {
     console.log("Fired login");
     mainService.registerUser($scope.user).then(function(response) {
       $scope.user = response.data[0];
