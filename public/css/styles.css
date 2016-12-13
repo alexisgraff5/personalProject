@@ -238,3 +238,11 @@ h4 {
 .change-case {
   text-transform: uppercase;
 }
+
+.top-mar {
+  margin-top: 30px;
+}
+
+.dark {
+  color: #1E1E1E;
+}
