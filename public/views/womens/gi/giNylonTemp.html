@@ -1,30 +1,32 @@
 
 <div>
   <div class='gray-bar-border gray-bar-nav'></div>
-  <div class='row'>
+  <div class='indiv-page'>
+  <div class='col-up'>
     <img width="45" ng-src="{{selectedWatch.view1}}" alt="" ng-click='changeView(selectedWatch.view1)'>
     <img width="45" ng-src="{{selectedWatch.view2}}" alt="" ng-click='changeView(selectedWatch.view2)'>
     <img width="45" ng-src="{{selectedWatch.view3}}" alt="" ng-click='changeView(selectedWatch.view3)'>
   </div>
-  <div class='row'>
-    <img width="477" height="680" ng-src="{{watches.largeView}}" alt="">
-  </div>
-  <div class='row'>
   <div>
-    <h6>{{selectedWatch.sku}}</h6>
-    <h1>{{selectedWatch.name}}, {{selectedWatch.size}}</h1>
+    <img width="350" height="499" ng-src="{{watches.largeView}}" alt="">
+  </div>
+  <div class='item-info'>
+  <div>
+    <h6>SKU: {{selectedWatch.sku}}</h6>
+    <h2 class='change-case'>{{selectedWatch.name}}, {{selectedWatch.size}}</h2>
     <h5>{{selectedWatch.price | currency}}</h5>
   </div>
-    <div class="row" ng-repeat="watch in watches.watches" ng-click="changeWatch(watch)">
+    <div class="row pics-mar" ng-repeat="watch in watches.watches" ng-click="changeWatch(watch)">
         <a><img ng-src='{{watch.view1}}' width=32px></a>
     </div>
     <div class="">
-      <p>{{selectedWatch.color}}</p>
-      <p ng-show="selectedWatch.in_stock">In Stock</p>
-      <p ng-hide="selectedWatch.in_stock">Out of Stock</p>
+      <p class='change-case center'>{{selectedWatch.color}}</p><br/>
+      <h6 ng-show="selectedWatch.in_stock" class='center'>In Stock</h6>
+      <h6 ng-hide="selectedWatch.in_stock" class='center'>Out of Stock</h6>
     </div>
-    <add-to-cart-directive product='selectedWatch'></add-to-cart-directive>
+    <div class='btn-mar'><add-to-cart-directive product='selectedWatch'></add-to-cart-directive></div>
   </div>
+</div>
 
 <div class='spec-container'>
   <div class='specs-text'>

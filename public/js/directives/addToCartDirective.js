@@ -5,7 +5,7 @@ angular.module('nixonClone').directive('addToCartDirective', function() {
     scope: {
       product: '='
     },
-    template: '<button class="cart-btn" ng-click="addToCart(product)">Add to Cart</button>',
+    template: '<button class="btn" ng-click="addToCart(product)">Add to Cart</button>',
     controller: function($scope, mainService) {
       $scope.addToCart = product => {
         mainService.addToCart(product).then(response => {

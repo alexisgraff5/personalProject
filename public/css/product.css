@@ -54,3 +54,28 @@ hr {
 .features-box {
   margin-right: 128px;
 }
+
+.indiv-page {
+  display: flex;
+  justify-content: space-around;;
+}
+
+.col-up {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  margin-left: 80px;
+}
+
+.item-info {
+  margin-top: 110px;
+  margin-right: 80px;
+}
+
+.pics-mar {
+  margin: 25px auto;
+}
+
+.btn-mar {
+  margin: 15px auto;
+}
