@@ -234,3 +234,7 @@ h4 {
   margin: 10px;
   padding: 10px;
 }
+
+.change-case {
+  text-transform: uppercase;
+}

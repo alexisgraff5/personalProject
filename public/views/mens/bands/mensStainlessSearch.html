@@ -10,8 +10,7 @@
 <div class='gray-bar-border gray-bar-nav'></div>
 <h2 class='center'>Stainless Steel</h2>
 <div class="row row-padding" ng-repeat="(key, value) in products">
-
-  {{key}}
+  <div class='change-case'>{{key}}</div>
   <br>
   <img width="154" height="220" ng-src="{{value.largeView}}" alt="" ng-click='viewProduct(key, value)'>
   <div style="display: inline-block" ng-repeat="watch in value.watches" class="" ng-mouseover="showView(value, watch.view1)">
