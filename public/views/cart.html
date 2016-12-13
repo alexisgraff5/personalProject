@@ -2,15 +2,24 @@
 <div class='gray-bar-border gray-bar-nav'></div>
 <h2 class='center'>SHOPPING CART</h2>
 <div>
-  <button type="button" name="button" ng-click="checkout()" class='btn'>Checkout</button>
-  <div ng-repeat='item in cart'>
 
-    <h3>{{item.name}}</h3>
-    <img ng-src="{{item.view1}}" width=32px alt="">
-    <br/><br/>
-    <button type="button" name="button" ng-click="removeItem(item.orderitemid)">Remove</button>
+  <div ng-repeat='item in cart' class='item-cart'>
+    <div class='cart-row'>
+      <h3>{{item.name}}</h3>
+      <h3>{{item.size}}
+      <img ng-src="{{item.view1}}" width=154px alt="">
+    </div>
+    <div class='cart-row'>
+      <h3>{{item.price | currency}}</h3>
+      <br/>
+      <button type="button" name="button" class='btn' ng-click="removeItem(item.orderitemid)">Remove</button>
+    </div>
   </div>
-  
+<div class='cart-row align-right'>
   <h2>{{total | currency}}</h2>
+  <div class='checkout-btn'>
+  <button type="button" name="button" ng-click="checkout()" class='btn'>Checkout</button>
+</div>
+  </div>
 </div>
 </div>

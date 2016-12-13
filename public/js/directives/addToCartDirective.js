@@ -9,7 +9,6 @@ angular.module('nixonClone').directive('addToCartDirective', function() {
     controller: function($scope, mainService) {
       $scope.addToCart = product => {
         mainService.addToCart(product).then(response => {
-          console.log(response.data);
           swal({
             title: "Added to Cart",
             text: "Item added successfully to cart",
