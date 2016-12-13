@@ -25,6 +25,12 @@ angular.module('nixonClone')
       mainService.checkout($scope.cart[0].orderid).then(function(response){
         $scope.cart  = response.data;
         totalCart();
+        swal({
+          title: "CheckOut",
+          text: "Checkout Complete",
+          type: "success",
+          confirmButtonText: "Awesome"
+  });
       });
     };
   });
