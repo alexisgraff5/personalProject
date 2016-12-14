@@ -26,6 +26,8 @@
 .register-login {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* The Close Button */

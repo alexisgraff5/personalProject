@@ -256,6 +256,153 @@ h4 {
   color: #1E1E1E;
 }
 
+/* navigation */
+.container {
+  background-color: #FFFFFF;
+  height: 115px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.logo {
+  padding-top: 30px;
+  margin-top: 15px;
+}
+
+.top-level {
+  margin: auto 10px;
+}
+
+.bottom-level {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.menu-align {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-level-hover:hover {
+  border-bottom: 2px solid;
+}
+
+.nav-col {
+  font-size: 11px;
+  background-color: #FFFFFF;
+  margin: 5px;
+}
+
+.sub:hover {
+  color: #D1D4D6;
+}
+
+.sub {
+  margin-right: 10px;
+}
+
+.sub-nav-hr {
+  color: #eef0f0;
+  margin: 0;
+  height: 1px;
+  margin: 0;
+  text-align: left;
+  border: 0;
+}
+
+/* individual product pages */
+.spec-container {
+  background-color: #F7F8F9;
+  display: flex;
+  width: 100%;
+  padding: 80px 0;
+  flex-wrap: wrap;
+}
+
+.specs-text {
+  width: 35%;
+  margin-left: 90px;
+  padding-top: 25px;
+}
+
+.large-product-image {
+  width: 55%;
+}
+
+h6 {
+  font-size: 11px;
+  line-height: 19px;
+  margin-bottom: 5px;
+  color: #9B9E9F;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: .002em;
+  margin-bottom: 10px;
+}
+
+hr {
+  background: #D1D4D6;
+  color: #D1D4D6;
+  margin: 25px 0;
+}
+
+.hr-features {
+  max-width: 50px;
+  margin: 25px 0;
+}
+
+.features {
+  font-size: 12px;
+  line-height: 22px;
+  min-width: 325px;
+}
+
+.wid-max {
+  min-width: 325px;
+}
+
+.h3-sub {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.features-box {
+  margin-right: 128px;
+}
+
+.indiv-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-up {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  margin-left: 80px;
+}
+
+.item-info {
+  margin-top: 110px;
+  margin-right: 80px;
+}
+
+.pics-mar {
+  margin: 25px auto;
+}
+
+.btn-mar {
+  margin: 15px auto;
+}
+
 @media screen and (max-width: 767px) {
   .footer-img .banner-image{
     background-position: bottom center;
@@ -275,6 +422,9 @@ h4 {
     display: none;
   }
   .banner-box {
+    display: none;
+  }
+  .menu-align {
     display: none;
   }
 }

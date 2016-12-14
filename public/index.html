@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/navigation.css">
     <link rel="stylesheet" type="text/css" href="./css/modal.css">
     <link rel="stylesheet" type="text/css" href="./css/cart.css">
-    <link rel="stylesheet" type="text/css" href="./css/product.css">
     <link rel="stylesheet" type="text/css" href="./dist/sweetalert.css">
     <title>NixonSortOfClone</title>
   </head>
@@ -24,7 +22,7 @@
             <!-- Modal content -->
             <div class="modal-content register-login">
               <div>
-
+                <span class="close">x</span>
               <h2>Register</h2>
               <input name='firstname' type='firstname' placeholder='firstname' ng-model='user.firstname'/><br/><br/>
               <input name='lastname' type='lastname' placeholder='lastname' ng-model='user.lastname'/><br/><br/>
@@ -40,7 +38,7 @@
               <br/>
               <button class='btn' id='exit' name="button" ng-click='loginUser()'>LOGIN</button>
             </div>
-            <span class="close">x</span>
+
             </div>
           </div>
         <div class='enter-cart'>
@@ -65,8 +63,8 @@
             <a ui-sref='mens-bands'>BAND MATERIAL</a>
             <hr class='sub-nav-hr'>
             <a ui-sref='mens-band-leather' class='sub'>Leather</a>
-            <a ui-sref='mens-band-stainless' class='sub'>Stainless Steel</a><br/>
-            <a ui-sref='mens-band-silicone' class='sub'>PU / Rubber / Silicone</a>
+            <a ui-sref='mens-band-stainless' class='sub'>Stainless Steel</a>
+            <a ui-sref='mens-band-silicone' class='sub'>Silicone</a>
           </div>
         </div>
       </div>
