@@ -13,6 +13,12 @@ h2 {
   padding: 10px 0 20px 0;
 }
 
+.login-btn {
+  background-color: #D1D4D6;
+  color: #1E1E1E;
+  border: 0;
+}
+
 .center {
   text-align: center;
 }
@@ -179,19 +185,20 @@ h4 {
   margin: 10px 0;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-img .banner-image{
-    background-position: bottom center;
-    background-size: auto 130%;
-  }
-  .footer-text {
-    padding: 100px 0 70px;
-    font-size: 15px;
-    line-height: 28px;
-    min-width: 300px;
-    width: 74%;
-  }
+.page-banner-text {
+  text-align: center;
+  margin: auto auto;
+  font-size: 24px;
 }
+
+.banner-box {
+  background-color: #F7F8F9;
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+
+
 
 /* home page */
 .banner-image {
@@ -204,6 +211,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .size-gutter {
@@ -221,6 +229,7 @@ h4 {
 .three-image {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .home-three-image {
@@ -245,4 +254,27 @@ h4 {
 
 .dark {
   color: #1E1E1E;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-img .banner-image{
+    background-position: bottom center;
+    background-size: auto 130%;
+  }
+  .footer-text {
+    padding: 100px 0 70px;
+    font-size: 15px;
+    line-height: 28px;
+    min-width: 300px;
+    width: 74%;
+  }
+  .email-offers {
+    display: none;
+  }
+  .bottom-nav {
+    display: none;
+  }
+  .banner-box {
+    display: none;
+  }
 }
