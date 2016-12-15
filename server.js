@@ -4,7 +4,7 @@ var session = require('express-session');
 var cors = require('cors');
 var config = require('./config.js');
 var massive = require('massive');
-var connectionString = "postgres://postgres@localhost/nixon_mini_clone";
+var connectionString = config.connectionString;
 
 var app = module.exports = express();
 
