@@ -2,9 +2,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var cors = require('cors');
-var config = require('./config.js');
+//var config = require('./config.js');
 var massive = require('massive');
-var connectionString = config.connectionString;
+var connectionString = process.env.connectionString;
 
 var app = module.exports = express();
 
@@ -24,7 +24,7 @@ var orderCtrl = require('./controllers/orderCtrl.js');
 
 
 app.use(session({
-  secret: config.sessionSecret,
+  secret: process.env.sessionSecret,
   saveUninitialized: false,
   resave: false
 }));
@@ -50,6 +50,6 @@ app.get('/cart/:id', orderCtrl.getCart);
 app.delete('/cart/:userId/:orderItemId', orderCtrl.removeItem);
 app.put('/cart/:userId/:orderId', orderCtrl.checkout);
 
-app.listen(config.port, function() {
+app.listen(process.env.port, function() {
   console.log('listening to port', config.port);
 });
