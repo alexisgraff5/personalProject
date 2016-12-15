@@ -51,5 +51,5 @@ app.delete('/cart/:userId/:orderItemId', orderCtrl.removeItem);
 app.put('/cart/:userId/:orderId', orderCtrl.checkout);
 
 app.listen(process.env.port, function() {
-  console.log('listening to port', config.port);
+  console.log('listening to port', process.env.port);
 });
